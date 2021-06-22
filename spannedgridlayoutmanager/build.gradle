@@ -28,7 +28,7 @@ afterEvaluate {
 ext {
 
     package_name = 'com.joeiot'
-    artifactVersion = '4.0.0_2021_04_06_1_SNAPSHOT'//release包发布的版本
+    artifactVersion = '4.0.0_2021_04_06_2_SNAPSHOT'//release包发布的版本
     curFlavor = 'moorgen'
 
     artifactGroup = "spannedgridlayoutmanager"
@@ -105,4 +105,5 @@ afterEvaluate {
 // Bintray Upload
 //apply from: '../gradle/tools/bintrayv1.gradle'
 //apply from: '../gradle/tools/installv1.gradle'
-apply from: '../local-maven.gradle'
+//apply from: '../local-maven.gradle'
+apply from: rootProject.file('./gradle-mvn-push.gradle')
