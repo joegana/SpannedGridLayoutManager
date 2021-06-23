@@ -14,16 +14,16 @@ buildscript {
         jcenter()
         google()
         mavenLocal()
+        mavenCentral()
     }
     dependencies {
         classpath "com.android.tools.build:gradle:${gradle_plugin_version}"
-        classpath "org.jetbrains.dokka:dokka-android-gradle-plugin:$dokka_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.dokka:dokka-android-gradle-plugin:$dokka_version"
         classpath "io.codearte.gradle.nexus:gradle-nexus-staging-plugin:0.30.0"
+//        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:$jfrog_version"
 
-//        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:$jfrog_version"
-//        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
     }
 }
 
@@ -32,6 +32,7 @@ allprojects {
         jcenter()
         google()
         mavenLocal()
+        mavenCentral()
     }
 }
 
@@ -46,8 +47,4 @@ ext {
     sdk_min_api_level = 17
     min_api_level = 17
     support_version = '28.+'
-
-    artifactory_user='justin'
-    artifactory_password='123456'
-    artifactory_contextUrl='http://192.168.50.6:8081/artifactory/'
 }

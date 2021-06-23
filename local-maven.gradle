@@ -18,6 +18,7 @@ publishing {
 artifactory {
     contextUrl  = "${artifactory_contextUrl}"
     publish {
+        println("${artifactory_user}:${artifactory_password}:${artifactory_contextUrl}")
         repository {
             // The Artifactory repository key to publish to
             repoKey = (artifactVersion.endsWith('SNAPSHOT') || artifactVersion.endsWith('snapshot'))  ? 'mg-app-libs-snapshot' : 'mg-app-libs-release'
