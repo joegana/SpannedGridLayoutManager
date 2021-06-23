@@ -4,8 +4,8 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion build_tool_version
-    buildToolsVersion buildtools_version
+    compileSdkVersion build_sdk_version
+    buildToolsVersion build_tool_version
     defaultConfig {
         applicationId "com.arasthel.spannedgridlayoutmanager.sample"
         minSdkVersion min_api_level

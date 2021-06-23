@@ -16,11 +16,11 @@ def getSnapshotRepositoryUrl() {
 }
 
 def getRepositoryUsername() {
-    return hasProperty('NEXUS_USERNAME') ? NEXUS_USERNAME : "joegana"
+    return hasProperty('NEXUS_USERNAME') ? NEXUS_USERNAME : "Your Nexus UserName"
 }
 
 def getRepositoryPassword() {
-    return hasProperty('NEXUS_PASSWORD') ? NEXUS_PASSWORD : "Jira_31415926535"
+    return hasProperty('NEXUS_PASSWORD') ? NEXUS_PASSWORD : "Your Nexus UserPasswd"
 }
 
 afterEvaluate { project ->
